@@ -59,10 +59,10 @@ export function Header() {
                 color="gray.300"
                 borderRightWidth={1}
                 borderColor="gray.700"
+                ml="auto"
             >
                 <Flex
                     align="center"
-                    ml="auto"
                 >
                     <Icon as={RiNotificationLine} />
                     <Icon as={RiUserAddLine} />
