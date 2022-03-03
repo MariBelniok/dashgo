@@ -4,11 +4,11 @@ import {
   Checkbox,
   Flex,
   Heading,
-  Icon, Spinner, Table,
+  Icon, Link, Spinner, Table,
   Tbody,
   Td, Text, Th,
   Thead,
-  Tr, useBreakpointValue, Link
+  Tr, useBreakpointValue
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useState } from "react";
@@ -20,7 +20,7 @@ import { api } from "../../services/api";
 import { useUsers } from "../../services/hooks/useUsers";
 import { queryClient } from "../../services/queryClient";
 
-export default function UserList() {
+export default function UserList({ users }) {
   const [page, setPage] = useState(1);
   const { data, isLoading, isFetching, error } = useUsers(page);
 
